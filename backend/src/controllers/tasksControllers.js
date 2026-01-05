@@ -26,7 +26,7 @@ export const getAllTasks = async (req, res) => {
     }
   }
 
-  const query = startDate ? { createAt: { $gte: startDate } } : {};
+  const query = startDate ? { createdAt: { $gte: startDate } } : {};
 
   try {
     /* const tasks = await Task.find().sort({ createdAt: -1 }); // .find để lấy toàn bộ dữ liệu trong cơ sở dữ liệu // .sort({createdAt: -1}) sắp xếp theo thời gian tạo từ dưới lên */
